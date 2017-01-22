@@ -13,6 +13,7 @@
 namespace JustPublish\Form;
 
 use JustPublish\Form\Validation;
+use JustPublish\Request\RequestInterface;
 
 class Form
 {
@@ -53,6 +54,8 @@ class Form
         
         return $this;
     }
+
+    // pubilc function bind(RequestInterface $request);
 
     public function __toString()
     {

@@ -58,13 +58,7 @@ class BaseQuery extends DbHandler implements QueryInterface
     protected $group = array();
 
     /**
-     * Adds a condition to query
-     * 
-     * @param  string $field
-     * @param  mixed $value
-     * @param  string $operator
-     * 
-     * @return QueryInterface
+     * @inheritDoc
      */
     public function filterBy($field, $value, $operator = '=')
     {
@@ -82,9 +76,7 @@ class BaseQuery extends DbHandler implements QueryInterface
     }
 
     /**
-     * Sets next condition to be an OR
-     * 
-     * @return QueryInterface
+     * @inheritDoc
      */
     public function _or()
     {
@@ -94,11 +86,7 @@ class BaseQuery extends DbHandler implements QueryInterface
     }
 
     /**
-     * Replace default fields to be selected
-     * 
-     * @param  array  $fields
-     * 
-     * @return QueryInterface
+     * @inheritDoc
      */
     public function selectFields(array $fields)
     {
@@ -122,12 +110,7 @@ class BaseQuery extends DbHandler implements QueryInterface
     }
 
     /**
-     * Order by field(s)
-     * 
-     * @param  string|array $fields
-     * @param  string $order Defaul ASC
-     * 
-     * @return QueryInterface
+     * @inheritDoc
      */
     public function orderBy($fields, $order = 'ASC')
     {
@@ -160,11 +143,7 @@ class BaseQuery extends DbHandler implements QueryInterface
     }
 
     /**
-     * Replace default fields to be selected
-     * 
-     * @param  int  $number
-     * 
-     * @return QueryInterface
+     * @inheritDoc
      */
     public function limit($number)
     {
@@ -172,9 +151,7 @@ class BaseQuery extends DbHandler implements QueryInterface
     }
 
     /**
-     * Execute query
-     * 
-     * @return mixed
+     * @inheritDoc
      */
     public function find()
     {

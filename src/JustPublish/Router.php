@@ -93,7 +93,8 @@ class Router
      */
     public function getRoute()
     {
-        $route = isset($_GET['route']) ? strstr($_GET['route'], '?', true) : 'main/index';
+        $route = substr($this->registry->request->get('path'), 1);
+        $route = 0 !== strlen($route) ? $route : INDEX;
         $route = explode('/', $route);
 
         return $route;

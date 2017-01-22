@@ -14,11 +14,10 @@ namespace JustPublish;
 
 use JustPublish\Registry;
 use JustPublish\Router;
-use JustPublish\Request;
+use JustPublish\Request\Request;
 use JustPublish\TemplateEngine;
 use JustPublish\Db\DbHandler;
 use JustPublish\Storage\SessionManager;
-
 
 /**
  * 

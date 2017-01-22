@@ -14,7 +14,7 @@ namespace App\Controller;
 
 use JustPublish\Controller\AbstractController;
 use App\Query\PostQuery;
-use JustPublish\Request;
+use JustPublish\Request\Request;
 use JustPublish\Form\Form;
 
 class Admin extends AbstractController
@@ -40,7 +40,20 @@ class Admin extends AbstractController
 
     public function login()
     {
-        $this->render('index');
+        $this->form = new Form();
+
+        $this->form
+            ->addField('username', array(
+                'type' => 'text',
+                'label' => 'Username',
+            ))
+            ->addField('password', array(
+                'type' => 'password',
+                'label' => 'Password',
+            ))
+        ;
+
+        $this->render('login');
     }
 
     public function logout()

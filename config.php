@@ -1,19 +1,5 @@
 <?php
 
-/*
- * debug
- * Levels:
- * NONE = 0
- * E_ERROR = 1
- * E_WARNING = 2
- * E_PARSE = 4
- * E_NOTICE = 8
- * E_ALL = -1
- *
- * use "0" in prod
- */
-define('DEBUG_LEVEL', -1);
-
 // database config
 define('DB_NAME', 'just_publish');
 define('DB_USER', 'root');
@@ -29,6 +15,9 @@ define('FALLBACK_THEME', 'default');
 
 // session
 define('SESSION_TIME', 30);
+
+// Routing
+define('INDEX', 'main/index');
 
 // blog config
 // define('POSTS')

@@ -1,4 +1,5 @@
 <?php
+// exit('index');
 require_once 'config.php';
 error_reporting(DEBUG_LEVEL);
 

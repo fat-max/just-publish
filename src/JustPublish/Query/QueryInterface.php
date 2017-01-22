@@ -66,5 +66,9 @@ interface QueryInterface
      */
     public function find();
 
+    /**
+     * Return sql
+     * @return string
+     */
     public function __toString();
 }

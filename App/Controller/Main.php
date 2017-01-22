@@ -14,7 +14,7 @@ namespace App\Controller;
 
 use JustPublish\Controller\AbstractController;
 use App\Query\PostQuery;
-use JustPublish\Request;
+use JustPublish\Request\Request;
 
 class Main extends AbstractController
 {
@@ -43,7 +43,7 @@ class Main extends AbstractController
         $this->posts = PostQuery::create()
             ->joinComments()
             ->joinUser()
-            ->filterBy('jp_post.id', $request->get('id'))
+            ->filterBy('jp_post.id', $request->getParameter('id'))
             ->find()
         ;
 
