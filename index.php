@@ -1,5 +1,4 @@
 <?php
-// exit('index');
 require_once 'config.php';
 error_reporting(DEBUG_LEVEL);
 
@@ -16,6 +15,3 @@ $kernel = new JustPublish\Kernel('App\Controller');
 $kernel->run();
 
 $kernel->terminate();
-
-// $options = array('cost' => 11);
-// echo password_hash("rasmuslerdorf", PASSWORD_DEFAULT, $options);

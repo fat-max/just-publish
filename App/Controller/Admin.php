@@ -35,7 +35,7 @@ class Admin extends AbstractController
             ))
         ;
 
-        $this->render('index');
+        // $this->render('index');
     }
 
     public function login()
