@@ -1,6 +1,5 @@
 <?php
 require_once 'config.php';
-error_reporting(DEBUG_LEVEL);
 
 require_once __DIR__.'/src/JustPublish/Autoload/Autoloader.php';
 
